@@ -58,6 +58,7 @@ namespace LoaderTraker
 
                             if (result != DialogResult.Yes)
                                 return;
+                            ;
                         }
 
                         var lbl = new Label() {Dock = DockStyle.Top, Text = b.Text + "\t     " + taker.Value};
