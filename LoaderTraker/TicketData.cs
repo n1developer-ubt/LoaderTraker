@@ -8,7 +8,7 @@ namespace LoaderTraker
 {
     public class TicketData
     {
-        public string ComapanyName { get; set; }
+        public string CompanyName { get; set; }
         public string Address1 { get; set; }
         public string Address2 { get; set; }
         public DateTime Date { get; set; }
@@ -16,6 +16,5 @@ namespace LoaderTraker
         public string Client { get; set; }
         public string Username { get; set; }
         public List<string> Products { get; set; }
-
     }
 }

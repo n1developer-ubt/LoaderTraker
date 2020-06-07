@@ -70,5 +70,57 @@ namespace LoaderTraker.Properties {
                 this["Address2"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"ALU CARTER 2% FER
+ALU JANTES
+MOTEUR ALU/ FONTE ALU
+ALU PROFILE MELE
+ALU LAMINE 1% FER ALE MELE
+CUIVRE MELE
+CUIVRE MILBERRY
+CUIVRE ETAME
+CUIVRE CHAUFFE EAU
+CABLE ALU MELE 40%
+FERAILLES
+VF1 (DISQUES)
+VF2 (FONTE)
+CABLES CUIVRE PAUVRE
+CABLES CUIVRE RICHE
+ZINC
+PLOMB
+BATTERIES
+METAUX FERREUX
+CABLES CUIVRE MELE
+LAITON MELE
+CABLES Cu/Pb/Fe
+INOX 18/8
+MOTEURS ELECTRIQUES
+ALU NEUF BLANC
+ALU ALMELEC
+ALU PROFILE BLANC
+ALU TOURNURES
+INOX F17")]
+        public string Products {
+            get {
+                return ((string)(this["Products"]));
+            }
+            set {
+                this["Products"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SalesHistory {
+            get {
+                return ((string)(this["SalesHistory"]));
+            }
+            set {
+                this["SalesHistory"] = value;
+            }
+        }
     }
 }

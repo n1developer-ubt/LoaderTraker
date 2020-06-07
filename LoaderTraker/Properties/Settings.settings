@@ -14,5 +14,39 @@
     <Setting Name="Address2" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="Products" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ALU CARTER 2% FER
+ALU JANTES
+MOTEUR ALU/ FONTE ALU
+ALU PROFILE MELE
+ALU LAMINE 1% FER ALE MELE
+CUIVRE MELE
+CUIVRE MILBERRY
+CUIVRE ETAME
+CUIVRE CHAUFFE EAU
+CABLE ALU MELE 40%
+FERAILLES
+VF1 (DISQUES)
+VF2 (FONTE)
+CABLES CUIVRE PAUVRE
+CABLES CUIVRE RICHE
+ZINC
+PLOMB
+BATTERIES
+METAUX FERREUX
+CABLES CUIVRE MELE
+LAITON MELE
+CABLES Cu/Pb/Fe
+INOX 18/8
+MOTEURS ELECTRIQUES
+ALU NEUF BLANC
+ALU ALMELEC
+ALU PROFILE BLANC
+ALU TOURNURES
+INOX F17</Value>
+    </Setting>
+    <Setting Name="SalesHistory" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

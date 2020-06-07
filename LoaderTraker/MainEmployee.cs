@@ -22,7 +22,7 @@ namespace LoaderTraker
             InitializeComponent();
             lblLiciencePlate.Text= liciencePlate;
             lblUsername.Text = username;
-            foreach (var currentProduct in Products.CurrentProducts)
+            foreach (var currentProduct in Settings.Default.Products.Split('\n'))
             {
                 pnlProducts.Controls.Add(GetButton(currentProduct.Trim()));
             }
@@ -49,6 +49,12 @@ namespace LoaderTraker
 
                     if (taker.Value != null)
                     {
+                        if (taker.Value.Length < 5 || taker.Value[1] != 'T' || taker.Value.Count(x=>x=='T') != 1 )
+                        {
+                            MessageBox.Show("Icorrect Format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+
                         int val = Convert.ToInt32(GetInt(taker.Value));
 
                         if (val > 50)
@@ -58,15 +64,12 @@ namespace LoaderTraker
 
                             if (result != DialogResult.Yes)
                                 return;
-                            ;
                         }
 
-                        var lbl = new Label() {Dock = DockStyle.Top, Text = b.Text + "\t     " + taker.Value};
-                        lbl.TextAlign = ContentAlignment.MiddleLeft;
-                        lbl.AutoSize = false;
-                        lbl.DoubleClick +=LblOnDoubleClick;
+                        var lbl = new SelectedProduct() {Dock = DockStyle.Top, Value= b.Text + "\t     " + taker.Value};
+                        //lbl.AutoSize = false;
+                        //lbl.DoubleClick +=LblOnDoubleClick;
                         pnlSelectedProducts.Controls.Add(lbl);
-
                     }
                 }
                 BringToFront();
@@ -91,14 +94,15 @@ namespace LoaderTraker
                 Address2 = Settings.Default.Address2,
                 Address1 = Settings.Default.Address1,
                 Client = lblLiciencePlate.Text,
-                ComapanyName = Settings.Default.CompanyName,
+                CompanyName = Settings.Default.CompanyName,
                 Date = DateTime.Now,
-                Products = pnlSelectedProducts.Controls.OfType<Label>().Select(x=>x.Text).ToList(),
+                Products = pnlSelectedProducts.Controls.OfType<SelectedProduct>().Select(x=>x.Value).ToList(),
                 Code = "LT"+DateTime.Now.ToString("yyyyMMdd")+"-"+GetSerial()+"-"+ pnlSelectedProducts.Controls.OfType<Label>().Select(x=>Convert.ToInt32(GetInt(x.Text))).Sum(),
                 Username = lblUsername.Text
             };
             Ticket t = new Ticket(data);
             t.Print();
+            this.Close();
         }
 
         private string GetInt(string x)

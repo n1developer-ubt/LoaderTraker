@@ -36,7 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.4">
-      <HintPath>..\..\n1developer-ubt\ubtlib\UBTStandardLibrary\bin\Debug\Bunifu_UI_v1.5.4.dll</HintPath>
+      <HintPath>..\..\ubtlib\UBTStandardLibrary\bin\Debug\Bunifu_UI_v1.5.4.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -71,7 +71,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="UBTStandardLibrary">
-      <HintPath>..\..\n1developer-ubt\ubtlib\UBTStandardLibrary\bin\Debug\UBTStandardLibrary.dll</HintPath>
+      <HintPath>..\..\ubtlib\UBTStandardLibrary\bin\Debug\UBTStandardLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -105,7 +105,6 @@
     <Compile Include="MainEmployee.Designer.cs">
       <DependentUpon>MainEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Products.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoleSelectionWindow.cs">
@@ -113,6 +112,12 @@
     </Compile>
     <Compile Include="RoleSelectionWindow.Designer.cs">
       <DependentUpon>RoleSelectionWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectedProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectedProduct.Designer.cs">
+      <DependentUpon>SelectedProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="SystemUser.cs" />
     <Compile Include="SystemUserControl.cs">
@@ -162,6 +167,9 @@
     </Compile>
     <EmbeddedResource Include="RoleSelectionWindow.resx">
       <DependentUpon>RoleSelectionWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectedProduct.resx">
+      <DependentUpon>SelectedProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SystemUserControl.resx">
       <DependentUpon>SystemUserControl.cs</DependentUpon>

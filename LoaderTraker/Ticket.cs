@@ -1,11 +1,16 @@
 ﻿using System;
 using System.Drawing;
 using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows.Forms;
+using DevExpress.Office.Utils;
+using DevExpress.RichEdit.Export;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraReports.UI;
+using Newtonsoft.Json;
 using ChangeEventArgs = DevExpress.XtraReports.UI.ChangeEventArgs;
+using Settings = LoaderTraker.Properties.Settings;
 
 namespace LoaderTraker
 {
@@ -14,6 +19,24 @@ namespace LoaderTraker
         public Ticket(TicketData t)
         {
             InitializeComponent();
+            string his = Settings.Default.SalesHistory;
+
+            List<TicketData> ts;
+
+            if (his.Trim().Equals(""))
+            {
+                ts = new List<TicketData>();
+            }
+            else
+            {
+                ts = JsonConvert.DeserializeObject<List<TicketData>>(his);
+            }
+
+            ts.Add(t);
+
+            Settings.Default.SalesHistory = JsonConvert.SerializeObject(ts);
+            Settings.Default.Save();
+
             tblProducts.SizeChanged += TblProductsOnSizeChanged;
             lblAddress1.Text = t.Address1;
             lblAddress2.Text = t.Address2;
@@ -21,8 +44,8 @@ namespace LoaderTraker
             lblCode.Text = t.Code;
             lblResponsible.Text = "Responsable: " + t.Username;
             lblNumberOfProducts.Text = "NOMBRE DE LIGNE: " + t.Products.Count.ToString();
-            lblCompanyName.Text = t.ComapanyName;
-            lblDateTime.Text = t.Date.ToString("MM/dd/yyyy hh:mm");
+            lblCompanyName.Text = t.CompanyName;
+            lblDateTime.Text = t.Date.ToString("dd/mm/yyyy HH:mm");
             foreach(var x in t.Products)
             {
                 string[] l = x.Split('\t');

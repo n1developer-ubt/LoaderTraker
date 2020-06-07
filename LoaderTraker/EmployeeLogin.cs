@@ -49,6 +49,7 @@ namespace LoaderTraker
                             using (LiciencePlate p = new LiciencePlate(u.Username))
                             {
                                 p.ShowDialog();
+                                this.Close();
                             }
                         }
                         else

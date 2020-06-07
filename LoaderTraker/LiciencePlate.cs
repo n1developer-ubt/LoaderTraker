@@ -49,6 +49,7 @@ namespace LoaderTraker
             using(MainEmployee em = new MainEmployee(_username, txtPassword.Text))
             {
                 em.ShowDialog();
+                this.Close();
             }
         }
     }

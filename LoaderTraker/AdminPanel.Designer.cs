@@ -42,12 +42,35 @@
             this.txtAddress2 = new UBTStandardLibrary.UBTTextBox();
             this.txtAddress1 = new UBTStandardLibrary.UBTTextBox();
             this.txtCompanyName = new UBTStandardLibrary.UBTTextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.txtProducts = new System.Windows.Forms.RichTextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnSaveProducts = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnClearHistory = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.dgvTickerData = new System.Windows.Forms.DataGridView();
+            this.CompanyName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Address1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Address2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Client = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Products = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTickerData)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage1
@@ -172,6 +195,8 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -310,6 +335,221 @@
             this.txtCompanyName.Text = "Company Name";
             this.txtCompanyName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage3.Controls.Add(this.txtProducts);
+            this.tabPage3.Controls.Add(this.panel4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(732, 398);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Products";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // txtProducts
+            // 
+            this.txtProducts.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtProducts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtProducts.Location = new System.Drawing.Point(3, 3);
+            this.txtProducts.Name = "txtProducts";
+            this.txtProducts.Size = new System.Drawing.Size(724, 345);
+            this.txtProducts.TabIndex = 9;
+            this.txtProducts.Text = "";
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.btnSaveProducts);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(3, 348);
+            this.panel4.Name = "panel4";
+            this.panel4.Padding = new System.Windows.Forms.Padding(3);
+            this.panel4.Size = new System.Drawing.Size(724, 45);
+            this.panel4.TabIndex = 8;
+            // 
+            // btnSaveProducts
+            // 
+            this.btnSaveProducts.Active = false;
+            this.btnSaveProducts.Activecolor = System.Drawing.Color.Green;
+            this.btnSaveProducts.BackColor = System.Drawing.Color.Green;
+            this.btnSaveProducts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSaveProducts.BorderRadius = 0;
+            this.btnSaveProducts.ButtonText = "Save";
+            this.btnSaveProducts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveProducts.DisabledColor = System.Drawing.Color.Gray;
+            this.btnSaveProducts.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSaveProducts.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnSaveProducts.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSaveProducts.Iconimage")));
+            this.btnSaveProducts.Iconimage_right = null;
+            this.btnSaveProducts.Iconimage_right_Selected = null;
+            this.btnSaveProducts.Iconimage_Selected = null;
+            this.btnSaveProducts.IconMarginLeft = 0;
+            this.btnSaveProducts.IconMarginRight = 0;
+            this.btnSaveProducts.IconRightVisible = false;
+            this.btnSaveProducts.IconRightZoom = 0D;
+            this.btnSaveProducts.IconVisible = false;
+            this.btnSaveProducts.IconZoom = 90D;
+            this.btnSaveProducts.IsTab = false;
+            this.btnSaveProducts.Location = new System.Drawing.Point(607, 3);
+            this.btnSaveProducts.Name = "btnSaveProducts";
+            this.btnSaveProducts.Normalcolor = System.Drawing.Color.Green;
+            this.btnSaveProducts.OnHovercolor = System.Drawing.Color.Green;
+            this.btnSaveProducts.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnSaveProducts.selected = false;
+            this.btnSaveProducts.Size = new System.Drawing.Size(112, 37);
+            this.btnSaveProducts.TabIndex = 3;
+            this.btnSaveProducts.Text = "Save";
+            this.btnSaveProducts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSaveProducts.Textcolor = System.Drawing.Color.White;
+            this.btnSaveProducts.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveProducts.Click += new System.EventHandler(this.btnSaveProducts_Click);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.panel6);
+            this.tabPage4.Controls.Add(this.panel5);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(732, 398);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Sales History";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.btnClearHistory);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(3, 350);
+            this.panel5.Name = "panel5";
+            this.panel5.Padding = new System.Windows.Forms.Padding(3);
+            this.panel5.Size = new System.Drawing.Size(726, 45);
+            this.panel5.TabIndex = 9;
+            // 
+            // btnClearHistory
+            // 
+            this.btnClearHistory.Active = false;
+            this.btnClearHistory.Activecolor = System.Drawing.Color.Red;
+            this.btnClearHistory.BackColor = System.Drawing.Color.Red;
+            this.btnClearHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClearHistory.BorderRadius = 0;
+            this.btnClearHistory.ButtonText = "Clear History";
+            this.btnClearHistory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClearHistory.DisabledColor = System.Drawing.Color.Gray;
+            this.btnClearHistory.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClearHistory.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnClearHistory.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnClearHistory.Iconimage")));
+            this.btnClearHistory.Iconimage_right = null;
+            this.btnClearHistory.Iconimage_right_Selected = null;
+            this.btnClearHistory.Iconimage_Selected = null;
+            this.btnClearHistory.IconMarginLeft = 0;
+            this.btnClearHistory.IconMarginRight = 0;
+            this.btnClearHistory.IconRightVisible = false;
+            this.btnClearHistory.IconRightZoom = 0D;
+            this.btnClearHistory.IconVisible = false;
+            this.btnClearHistory.IconZoom = 90D;
+            this.btnClearHistory.IsTab = false;
+            this.btnClearHistory.Location = new System.Drawing.Point(609, 3);
+            this.btnClearHistory.Name = "btnClearHistory";
+            this.btnClearHistory.Normalcolor = System.Drawing.Color.Red;
+            this.btnClearHistory.OnHovercolor = System.Drawing.Color.Red;
+            this.btnClearHistory.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnClearHistory.selected = false;
+            this.btnClearHistory.Size = new System.Drawing.Size(112, 37);
+            this.btnClearHistory.TabIndex = 3;
+            this.btnClearHistory.Text = "Clear History";
+            this.btnClearHistory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClearHistory.Textcolor = System.Drawing.Color.White;
+            this.btnClearHistory.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearHistory.Click += new System.EventHandler(this.btnClearHistory_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.dgvTickerData);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(3, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Padding = new System.Windows.Forms.Padding(3);
+            this.panel6.Size = new System.Drawing.Size(726, 347);
+            this.panel6.TabIndex = 10;
+            // 
+            // dgvTickerData
+            // 
+            this.dgvTickerData.AllowUserToAddRows = false;
+            this.dgvTickerData.AllowUserToDeleteRows = false;
+            this.dgvTickerData.BackgroundColor = System.Drawing.Color.White;
+            this.dgvTickerData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTickerData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CompanyName,
+            this.Address1,
+            this.Address2,
+            this.Date,
+            this.Code,
+            this.Client,
+            this.Username,
+            this.Products});
+            this.dgvTickerData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTickerData.Location = new System.Drawing.Point(3, 3);
+            this.dgvTickerData.Name = "dgvTickerData";
+            this.dgvTickerData.ReadOnly = true;
+            this.dgvTickerData.RowHeadersVisible = false;
+            this.dgvTickerData.Size = new System.Drawing.Size(718, 339);
+            this.dgvTickerData.TabIndex = 0;
+            // 
+            // CompanyName
+            // 
+            this.CompanyName.HeaderText = "Company Name ";
+            this.CompanyName.Name = "CompanyName";
+            this.CompanyName.ReadOnly = true;
+            // 
+            // Address1
+            // 
+            this.Address1.HeaderText = "Address1";
+            this.Address1.Name = "Address1";
+            this.Address1.ReadOnly = true;
+            // 
+            // Address2
+            // 
+            this.Address2.HeaderText = "Address2";
+            this.Address2.Name = "Address2";
+            this.Address2.ReadOnly = true;
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            this.Date.ReadOnly = true;
+            // 
+            // Code
+            // 
+            this.Code.HeaderText = "Code";
+            this.Code.Name = "Code";
+            this.Code.ReadOnly = true;
+            // 
+            // Client
+            // 
+            this.Client.HeaderText = "Client";
+            this.Client.Name = "Client";
+            this.Client.ReadOnly = true;
+            // 
+            // Username
+            // 
+            this.Username.HeaderText = "Username";
+            this.Username.Name = "Username";
+            this.Username.ReadOnly = true;
+            // 
+            // Products
+            // 
+            this.Products.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Products.HeaderText = "Products";
+            this.Products.MinimumWidth = 500;
+            this.Products.Name = "Products";
+            this.Products.ReadOnly = true;
+            // 
             // AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -324,6 +564,12 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTickerData)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -343,5 +589,22 @@
         private UBTStandardLibrary.UBTTextBox txtCompanyName;
         private System.Windows.Forms.Panel panel3;
         private Bunifu.Framework.UI.BunifuFlatButton btnSaveOtherSettings;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Panel panel4;
+        private Bunifu.Framework.UI.BunifuFlatButton btnSaveProducts;
+        private System.Windows.Forms.RichTextBox txtProducts;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private Bunifu.Framework.UI.BunifuFlatButton btnClearHistory;
+        private System.Windows.Forms.DataGridView dgvTickerData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CompanyName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Address1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Address2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Client;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Username;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Products;
     }
 }

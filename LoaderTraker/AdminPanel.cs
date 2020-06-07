@@ -32,11 +32,27 @@ namespace LoaderTraker
             txtCompanyName.Text = Settings.Default.CompanyName.Equals("")?txtCompanyName.Hint: Settings.Default.CompanyName;
             txtAddress1.Text = Settings.Default.Address1.Equals("")?txtAddress1.Hint: Settings.Default.Address1;
             txtAddress2.Text = Settings.Default.Address2.Equals("")?txtAddress2.Hint: Settings.Default.Address2;
+            LoadProducts();
+            LoadTicketData();
         }
 
         private void btnAddNewUser_Click(object sender, EventArgs e)
         {
             pnlSystemUserContainer.Controls.Add(new SystemUserControl(){Dock = DockStyle.Top});
+        }
+
+        private void LoadTicketData()
+        {
+            if(Settings.Default.SalesHistory.Trim().Equals(""))
+                return;
+
+            var data = JsonConvert.DeserializeObject<List<TicketData>>(Settings.Default.SalesHistory);
+
+            foreach (TicketData t in data)
+            {
+                dgvTickerData.Rows.Add(t.CompanyName, t.Address1, t.Address2, t.Date.ToString("dd/mm/yyyy HH:mm"),
+                    t.Code, t.Client, t.Username, string.Join(", ", t.Products));
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -53,9 +69,31 @@ namespace LoaderTraker
             Settings.Default.CompanyName = txtCompanyName.Text;
             Settings.Default.Address1= txtAddress1.Text;
             Settings.Default.Address2= txtAddress2.Text;
-            Settings.Default.Save();
+            SettingSaved();
+        }
 
+        private void LoadProducts()
+        {
+            txtProducts.Text = Settings.Default.Products;
+        }
+
+        private void btnSaveProducts_Click(object sender, EventArgs e)
+        {
+            Settings.Default.Products = txtProducts.Text.Trim();
+            SettingSaved();
+        }
+
+        private void SettingSaved()
+        {
+            Settings.Default.Save();
             MessageBox.Show("Other Setting Saved!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnClearHistory_Click(object sender, EventArgs e)
+        {
+            Settings.Default.SalesHistory = "";
+            Settings.Default.Save();
+            dgvTickerData.Rows.Clear();
         }
     }
 }
