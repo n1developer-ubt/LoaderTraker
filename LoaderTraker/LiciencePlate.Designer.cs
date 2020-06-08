@@ -196,7 +196,7 @@
             this.btnAffacer.BackColor = System.Drawing.Color.Red;
             this.btnAffacer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAffacer.BorderRadius = 0;
-            this.btnAffacer.ButtonText = "AFFACER";
+            this.btnAffacer.ButtonText = "EFFACER ";
             this.btnAffacer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAffacer.DisabledColor = System.Drawing.Color.Gray;
             this.btnAffacer.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -220,7 +220,7 @@
             this.btnAffacer.selected = false;
             this.btnAffacer.Size = new System.Drawing.Size(282, 49);
             this.btnAffacer.TabIndex = 1;
-            this.btnAffacer.Text = "AFFACER";
+            this.btnAffacer.Text = "EFFACER ";
             this.btnAffacer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAffacer.Textcolor = System.Drawing.Color.White;
             this.btnAffacer.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -255,7 +255,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "LiciencePlate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LiciencePlate";
+            this.Text = "Enregistrement ";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

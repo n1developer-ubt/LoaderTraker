@@ -21,7 +21,7 @@ namespace LoaderTraker
 
         private void btnAdministrator_Click(object sender, EventArgs e)
         {
-            var input = new InputDialog("Enter Password",new List<Input>(){new Input(){Hint = "Password",Type = InputType.Password,Index = 0,Name = "password"}},new N1Form(), ToolBoxProp.Exit);
+            var input = new InputDialog("Veuillez saisir votre mot de passe", new List<Input>(){new Input(){Hint = "Password",Type = InputType.Password,Index = 0,Name = "password"}},new N1Form(), ToolBoxProp.Exit);
             if (input.ShowIt() == ResultType.OK)
             {
                 if (input.Output.Find(x => x.Name.Equals("password")).Value.Equals("n1developer"))

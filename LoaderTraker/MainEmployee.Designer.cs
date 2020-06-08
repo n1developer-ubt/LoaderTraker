@@ -42,6 +42,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnDisconnect = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lblUsername = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ubtSplitContainer1)).BeginInit();
             this.ubtSplitContainer1.Panel1.SuspendLayout();
             this.ubtSplitContainer1.Panel2.SuspendLayout();
@@ -163,6 +164,7 @@
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.lblLiciencePlate);
+            this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 34);
             this.panel4.Name = "panel4";
@@ -172,9 +174,9 @@
             // lblLiciencePlate
             // 
             this.lblLiciencePlate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblLiciencePlate.Location = new System.Drawing.Point(0, 0);
+            this.lblLiciencePlate.Location = new System.Drawing.Point(37, 0);
             this.lblLiciencePlate.Name = "lblLiciencePlate";
-            this.lblLiciencePlate.Size = new System.Drawing.Size(237, 32);
+            this.lblLiciencePlate.Size = new System.Drawing.Size(200, 32);
             this.lblLiciencePlate.TabIndex = 1;
             this.lblLiciencePlate.Text = "lbl";
             this.lblLiciencePlate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -211,7 +213,7 @@
             this.btnDisconnect.BackColor = System.Drawing.Color.Red;
             this.btnDisconnect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDisconnect.BorderRadius = 0;
-            this.btnDisconnect.ButtonText = "DISCONNECT";
+            this.btnDisconnect.ButtonText = "DECONNEXION ";
             this.btnDisconnect.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDisconnect.DisabledColor = System.Drawing.Color.Gray;
             this.btnDisconnect.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -235,7 +237,7 @@
             this.btnDisconnect.selected = false;
             this.btnDisconnect.Size = new System.Drawing.Size(88, 26);
             this.btnDisconnect.TabIndex = 2;
-            this.btnDisconnect.Text = "DISCONNECT";
+            this.btnDisconnect.Text = "DECONNEXION ";
             this.btnDisconnect.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDisconnect.Textcolor = System.Drawing.Color.White;
             this.btnDisconnect.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -251,6 +253,16 @@
             this.lblUsername.Text = "lbl";
             this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 32);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Client:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // MainEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,7 +271,7 @@
             this.Controls.Add(this.ubtSplitContainer1);
             this.Name = "MainEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Employee";
+            this.Text = "Enregistrement ";
             this.ubtSplitContainer1.Panel1.ResumeLayout(false);
             this.ubtSplitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ubtSplitContainer1)).EndInit();
@@ -289,5 +301,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnDisconnect;
         private System.Windows.Forms.Label lblLiciencePlate;
         private Bunifu.Framework.UI.BunifuFlatButton btnValidate;
+        private System.Windows.Forms.Label label1;
     }
 }

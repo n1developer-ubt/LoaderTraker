@@ -91,7 +91,7 @@
             this.MinimumSize = new System.Drawing.Size(530, 104);
             this.Name = "EmployeeLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Employee Login";
+            this.Text = "Utilisateur";
             this.ResumeLayout(false);
 
         }

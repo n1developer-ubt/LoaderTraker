@@ -81,7 +81,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(732, 398);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Users";
+            this.tabPage1.Text = "Utilisateurs ";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // panel1
@@ -124,7 +124,7 @@
             this.btnSave.BackColor = System.Drawing.Color.Green;
             this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSave.BorderRadius = 0;
-            this.btnSave.ButtonText = "Save";
+            this.btnSave.ButtonText = "Enregistrer";
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.DisabledColor = System.Drawing.Color.Gray;
             this.btnSave.Dock = System.Windows.Forms.DockStyle.Right;
@@ -148,7 +148,7 @@
             this.btnSave.selected = false;
             this.btnSave.Size = new System.Drawing.Size(112, 37);
             this.btnSave.TabIndex = 3;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "Enregistrer";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSave.Textcolor = System.Drawing.Color.White;
             this.btnSave.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -161,7 +161,7 @@
             this.btnAddNewUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnAddNewUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAddNewUser.BorderRadius = 0;
-            this.btnAddNewUser.ButtonText = "Add New";
+            this.btnAddNewUser.ButtonText = "Ajouter";
             this.btnAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddNewUser.DisabledColor = System.Drawing.Color.Gray;
             this.btnAddNewUser.Dock = System.Windows.Forms.DockStyle.Right;
@@ -185,7 +185,7 @@
             this.btnAddNewUser.selected = false;
             this.btnAddNewUser.Size = new System.Drawing.Size(112, 37);
             this.btnAddNewUser.TabIndex = 2;
-            this.btnAddNewUser.Text = "Add New";
+            this.btnAddNewUser.Text = "Ajouter";
             this.btnAddNewUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAddNewUser.Textcolor = System.Drawing.Color.White;
             this.btnAddNewUser.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -236,7 +236,7 @@
             this.btnSaveOtherSettings.BackColor = System.Drawing.Color.Green;
             this.btnSaveOtherSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSaveOtherSettings.BorderRadius = 0;
-            this.btnSaveOtherSettings.ButtonText = "Save";
+            this.btnSaveOtherSettings.ButtonText = "Enregistrer";
             this.btnSaveOtherSettings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSaveOtherSettings.DisabledColor = System.Drawing.Color.Gray;
             this.btnSaveOtherSettings.Dock = System.Windows.Forms.DockStyle.Right;
@@ -260,7 +260,7 @@
             this.btnSaveOtherSettings.selected = false;
             this.btnSaveOtherSettings.Size = new System.Drawing.Size(112, 37);
             this.btnSaveOtherSettings.TabIndex = 3;
-            this.btnSaveOtherSettings.Text = "Save";
+            this.btnSaveOtherSettings.Text = "Enregistrer";
             this.btnSaveOtherSettings.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSaveOtherSettings.Textcolor = System.Drawing.Color.White;
             this.btnSaveOtherSettings.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -376,7 +376,7 @@
             this.btnSaveProducts.BackColor = System.Drawing.Color.Green;
             this.btnSaveProducts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSaveProducts.BorderRadius = 0;
-            this.btnSaveProducts.ButtonText = "Save";
+            this.btnSaveProducts.ButtonText = "Enregistrer";
             this.btnSaveProducts.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSaveProducts.DisabledColor = System.Drawing.Color.Gray;
             this.btnSaveProducts.Dock = System.Windows.Forms.DockStyle.Right;
@@ -400,7 +400,7 @@
             this.btnSaveProducts.selected = false;
             this.btnSaveProducts.Size = new System.Drawing.Size(112, 37);
             this.btnSaveProducts.TabIndex = 3;
-            this.btnSaveProducts.Text = "Save";
+            this.btnSaveProducts.Text = "Enregistrer";
             this.btnSaveProducts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSaveProducts.Textcolor = System.Drawing.Color.White;
             this.btnSaveProducts.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -557,7 +557,7 @@
             this.ClientSize = new System.Drawing.Size(740, 424);
             this.Controls.Add(this.tabControl1);
             this.Name = "AdminPanel";
-            this.Text = "Admin Panel";
+            this.Text = "Administrateur";
             this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

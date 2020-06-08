@@ -59,7 +59,7 @@ namespace LoaderTraker
 
                         if (val > 50)
                         {
-                            var result = MessageBox.Show("Weight is greater than 50 KG\nAre you sure to proceed?", "Alert",
+                            var result = MessageBox.Show("Weight is greater than 50 KG\nAre you sure to proceed?", "Vérification",
                                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                             if (result != DialogResult.Yes)
